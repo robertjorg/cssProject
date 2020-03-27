@@ -1,1 +1,37 @@
-<p>exact-selectors works!</p>
+<div>You are able to do something like </div>
+<div>a[href="http://www.css-discuss.org/about.html"] {{'{'}}font-weight: bold{{'}'}}</div>
+<div>This will make all links with that value bold</div>
+<div><a href="http://www.css-discuss.org/about.html" >Css-Discuss about</a></div>
+<div><a href="htt://google.com" target="_blank">Google</a></div>
+
+<div>Substring matching with attribute selectors</div>
+<table>
+  <colgroup>
+    <col style="width:20%">
+    <col style="width:80%">
+  </colgroup>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>foo~="bar"</td>
+    <td>Selects any element with an attribute foo whose value caontains the word bar in a space-separated list of words</td>
+  </tr>
+  <tr>
+    <td>foo*="bar"</td>
+    <td>Selects any element with an attribute foo whose value contains the substring bar</td>
+  </tr>
+  <tr>
+    <td>foo^="bar"</td>
+    <td>Selects any element with an attribute foo whose value begins with bar</td>
+  </tr>
+  <tr>
+    <td>foo$="bar"</td>
+    <td>Selects any element with an attribute foo whose value ends with bar</td>
+  </tr>
+  <tr>
+    <td>foo|="bar"</td>
+    <td>Selects any element with an attribute foo whose value starts with bar followed by a dash (U+002D) of whose value is exactly equal to bar</td>
+  </tr>
+</table>
