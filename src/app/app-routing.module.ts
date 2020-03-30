@@ -1,3 +1,4 @@
+import { PartialAttributesComponent } from './AttributeSelectors/partial-attributes/partial-attributes.component';
 import { ExactSelectorsComponent } from './AttributeSelectors/exact-selectors/exact-selectors.component';
 import { SimpleSelectorsComponent } from './AttributeSelectors/simple-selectors/simple-selectors.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,8 @@ const routes: Routes = [
   { path: '',
       children: [
         { path: 'simple', component: SimpleSelectorsComponent},
-        { path: 'exact', component: ExactSelectorsComponent}
+        { path: 'exact', component: ExactSelectorsComponent},
+        { path: 'partial', component: PartialAttributesComponent},
       ]
 
   }

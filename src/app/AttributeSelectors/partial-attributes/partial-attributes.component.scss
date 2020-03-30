@@ -1,0 +1,29 @@
+@import '../../app.component.scss';
+
+*[lang|="en"] {color: white;}
+
+p[class~="warning"] {
+  font-weight: bold;
+}
+
+span[class*="cloud"] {
+  font-style: italic;
+}
+
+a[href*="oreilly.com"] {
+  font-weight: bold;
+}
+
+input[title*="format"] {
+  background-color: pink;
+}
+
+
+*[class|="btn"][class*="-arrow"]:after {
+  content: "▼";
+}
+
+// a[href^="https:"] {font-weight: bold;}
+a[href^="mailto:"] {font-style: italic;}
+
+img[alt^="Figure"] {border: 2px solid gray; display: block; margin: 2em auto;}

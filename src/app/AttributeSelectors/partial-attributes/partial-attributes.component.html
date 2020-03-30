@@ -1,0 +1,72 @@
+<div>Substring matching with attribute selectors</div>
+<table>
+  <colgroup>
+    <col style="width:20%">
+    <col style="width:80%">
+  </colgroup>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>foo~="bar"</td>
+    <td>Selects any element with an attribute foo whose value contains the word bar in a space-separated list of words</td>
+  </tr>
+  <tr>
+    <td>foo*="bar"</td>
+    <td>Selects any element with an attribute foo whose value contains the substring bar</td>
+  </tr>
+  <tr>
+    <td>foo^="bar"</td>
+    <td>Selects any element with an attribute foo whose value begins with bar</td>
+  </tr>
+  <tr>
+    <td>foo$="bar"</td>
+    <td>Selects any element with an attribute foo whose value ends with bar</td>
+  </tr>
+  <tr>
+    <td>foo|="bar"</td>
+    <td>Selects any element with an attribute foo whose value starts with bar followed by a dash (U+002D) of whose value is exactly equal to bar</td>
+  </tr>
+</table>
+
+
+<div class="background-grey">
+  <h1 lang="en">Hello!</h1>
+  <p lang="en-us">Greetings!</p>
+  <div lang="en-au">G'day!</div>
+  <p lang="fr">Bonjour!</p>
+  <h4 lang="cy-en">Jrooana!</h4>
+  </div>
+
+  <p class="something warning">THIS IS A WARNING. This has a class of warning.</p>
+  <p class="something">This is not a warning. It does not have a class of warning</p>
+<p>The warning example has CSS p[class~="warning"] {{'{'}}font-weight: bold;{{'}'}}. This will show all classes with "warning" as font weight bold. <br />
+p.warning and p[class~="warning"] are equivalent in HTML.
+</p>
+
+
+<span class="barren rocky">Mercury</span><br />
+<span class="cloudy barren">Venus</span><br />
+<span class="life-bearing cloudy">Earth</span><br />
+<p>The above three selections either have a cloudy class or do not. If they do they are italic<br />
+We are matching a substring of the attribute that may not be space separated. A different example is when doing this on href</p>
+
+<a href="oreilly.com">O'Reilly.com</a><br />
+<a href="google.com">Google.com</a><br />
+<p>The two links above show O'Reilly.com in bold because of the CSS a[href*="oreilly.com"] {{'{'}}font-weight: bold;{{'}'}}</p>
+
+<input type="tel"
+title="Telephone number should be formatted as XXX-XXX-XXXX"
+pattern="\d{3}\-\d{3}\-\d{4}">
+
+<p>This input is using the same partial attribute style by using input[title*="format"]</p>
+<button class="btn-small-arrow-active">Click Me</button><br/>
+<button class="btn-small-active">Don't Click Me</button>
+<p>The button has CSS *[class|="btn"][class*="-arrow"]:after <br />
+  This requires the class name to start with button and must be followed by a dash and the substring "arrow" in order to apply the CSS</p>
+
+
+  <p>a[href$='.PDF' i] The 'i' in this CSS will make the .PDF case insensitive. You can have href contain .pdf, .PDF, .PdF. <br/>
+  However, the insensitivity only will work in the attribute values, not the attribute selectors</p>
+
