@@ -1,0 +1,19 @@
+h2 > strong {
+  color: red;
+}
+
+h1 + p {
+  color: blue;
+}
+
+ol + p + ul {
+  color: orange;
+}
+
+li + li {
+  font-weight: bold;
+}
+
+h1 ~p {
+  font-style: italic;
+}
