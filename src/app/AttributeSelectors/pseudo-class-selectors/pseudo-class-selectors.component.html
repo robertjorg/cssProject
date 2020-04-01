@@ -1,0 +1,13 @@
+<h1>Pseudo-class Selectors</h1>
+
+<p>Selectors that let you assign styles to phandom classes that are inferred by the state of elements, markup patterns in the document, or the state of the document.</p>
+<ul>
+  <li>Selecting the root element :root - select the root of an element</li>
+  <li>Selecting empty elements :empty - select any element that has no children of any kind, including text nodes. p:empty {{'{'}} display: none;{{'}'}} would prevent empty paragraphs from showing (must have no whitepace or text of any sort).</li>
+  <li>Selecting unique children :only-child - select elemnt when they are the only child element of another element. a[href] img:only-child {{'{'}}border: 2px solid black;{{'}'}}</li>
+</ul>
+
+
+<a href="http://w3.org/" target="_blank"><img src="../../../assets/w3.png" alt="W3C"></a><br/>
+<a href="http://w3.org/" target="_blank"><img src="../../../assets/w3.png" alt=""> The W3C</a><br/>
+<a href="http://w3.org/" target="_blank"><img src="../../../assets/w3.png" alt=""> <em>The W3C</em></a><br/>
