@@ -5,9 +5,36 @@
   <li>Selecting the root element :root - select the root of an element</li>
   <li>Selecting empty elements :empty - select any element that has no children of any kind, including text nodes. p:empty {{'{'}} display: none;{{'}'}} would prevent empty paragraphs from showing (must have no whitepace or text of any sort).</li>
   <li>Selecting unique children :only-child - select elemnt when they are the only child element of another element. a[href] img:only-child {{'{'}}border: 2px solid black;{{'}'}}</li>
+  <li>Selecting only types of :only-of-type - will match any element that is the only of its type among all its siblings.</li>
+  <li>Selecting first children :first-child - used to first children of an element.</li>
+  <li>Selecting last children :last-child - just like above</li>
+  <li>Selecting first of a type </li>
 </ul>
 
 
 <a href="http://w3.org/" target="_blank"><img src="../../../assets/w3.png" alt="W3C"></a><br/>
 <a href="http://w3.org/" target="_blank"><img src="../../../assets/w3.png" alt=""> The W3C</a><br/>
 <a href="http://w3.org/" target="_blank"><img src="../../../assets/w3.png" alt=""> <em>The W3C</em></a><br/>
+The img tag in the third link is not the only child so the image does not have a border
+:only-child only applies to the child, not the parent
+
+<p>This is text <span>in a paragraph and a span.</span> Using p > span:only-child {{'{'}}color: red;{{'}'}}</p>
+<p><a>This paragraph</a> shouldn't <span>have any red</span> As the span isn't the only child.</p>
+
+div p:only-of-type {{'{'}}border: 5px solid black;{{'}'}}
+<div><p>Only one paragraph</p></div>
+<div><p>this one</p><p>has two P</p></div>
+
+<div>
+p:first-child {{'{'}}font-weight: bold;{{'}'}}<br/>
+li:first-child {{'{'}}text-transform: uppercase;{{'}'}}<br />
+The p:first-child will make the first p that is a child of an element be bold faced.<br/>
+The li:first-child will make the first li element that is a child of an element be uppercase.<br/>
+Remember that the :first-child does not select the first child of an element but acts as a phantom class where your element is the first child of a class.
+</div>
+<div>
+  <p>Last child is the mirror of first-child. It works the same, except using the last child instead of the first child.</p>
+  <p>p:last-child {{'{'}}color: green;{{'}'}}</p>
+  <p>li:last-child {{'{'}}text-transform: uppercase;{{'}'}}</p>
+  <p>p:last-child em, this would select the last em element that is a child of p</p>
+</div>

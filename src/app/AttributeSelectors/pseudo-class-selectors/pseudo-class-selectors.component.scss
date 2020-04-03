@@ -1,1 +1,11 @@
 a[href] img:only-child {border: 2px solid black;}
+
+p > span:only-child {color: red;}
+
+div p:only-of-type {border: 5px solid black;}
+
+p:first-child {font-weight: bold;}
+li:first-child {text-transform: uppercase;}
+
+p:last-child {color: green;}
+li:last-child {text-transform: uppercase;}
