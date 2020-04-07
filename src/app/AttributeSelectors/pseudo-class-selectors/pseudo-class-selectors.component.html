@@ -8,7 +8,11 @@
   <li>Selecting only types of :only-of-type - will match any element that is the only of its type among all its siblings.</li>
   <li>Selecting first children :first-child - used to first children of an element.</li>
   <li>Selecting last children :last-child - just like above</li>
-  <li>Selecting first of a type </li>
+  <li>Selecting first of a type :first-of-type - select the first item of a given type, within an element. Not the entire document</li>
+  <li>Selecting last of a type :last-of-type - selects the last item of a given type, within an element. Just like first!</li>
+  <li>Selecting every nth of a type :nth-child(n) - selects the nth child of a given type. Allow you to do every other or whatever nth you choose by doing xn (or xn + y)</li>
+  <li>Selecting the last child and work backwards :nth-last-child()</li>
+  <li>There is also :nth-of-type() and :nth-last-oftype() - works similar to the two above</li>
 </ul>
 
 
@@ -37,4 +41,18 @@ Remember that the :first-child does not select the first child of an element but
   <p>p:last-child {{'{'}}color: green;{{'}'}}</p>
   <p>li:last-child {{'{'}}text-transform: uppercase;{{'}'}}</p>
   <p>p:last-child em, this would select the last em element that is a child of p</p>
+</div>
+
+<ol>
+  <li>This list item should have a red left border because of SCSS li:first-of-type {{'{'}}border-left: 1px solid red;{{'}'}}</li>
+  <li>Some middle itme</li>
+  <li>Every other li should have color purple li:nth-child(2n + 2) {{'{'}}color: purple;{{'}'}}</li>
+  <li>Last item will have an orange border because of SCSS li:first-of-type {{'{'}}border-left: 1px solid orange;{{'}'}}</li>
+</ol>
+
+<div>
+<p>
+  Counting for nth-child starts at one not at zero. You can also do nth-child(even/odd) to get the same results as nth-child(2n) and nth-child(2n-1)
+</p>
+<p>p:nth-last-child(odd) {{'{'}}background: silver;{{'}'}} All child p elements should follow this reul</p>
 </div>

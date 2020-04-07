@@ -1,3 +1,4 @@
+import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynamic-pseudo-class-selectors/dynamic-pseudo-class-selectors.component';
 import { PseudoClassSelectorsComponent } from './AttributeSelectors/pseudo-class-selectors/pseudo-class-selectors.component';
 import { DocumentStructureComponent } from './AttributeSelectors/document-structure/document-structure.component';
 import { PartialAttributesComponent } from './AttributeSelectors/partial-attributes/partial-attributes.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
         { path: 'partial', component: PartialAttributesComponent},
         { path: 'document', component: DocumentStructureComponent},
         { path: 'pseudo', component: PseudoClassSelectorsComponent},
+        { path: 'dynamic', component: DynamicPseudoClassSelectorsComponent}
       ]
 
   }
