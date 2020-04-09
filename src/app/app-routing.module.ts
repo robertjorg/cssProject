@@ -1,3 +1,5 @@
+import { HomeComponent } from './AttributeSelectors/home/home.component';
+// tslint:disable-next-line:max-line-length
 import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynamic-pseudo-class-selectors/dynamic-pseudo-class-selectors.component';
 import { PseudoClassSelectorsComponent } from './AttributeSelectors/pseudo-class-selectors/pseudo-class-selectors.component';
 import { DocumentStructureComponent } from './AttributeSelectors/document-structure/document-structure.component';
@@ -11,6 +13,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '',
       children: [
+        { path: '', component: HomeComponent},
         { path: 'simple', component: SimpleSelectorsComponent},
         { path: 'exact', component: ExactSelectorsComponent},
         { path: 'partial', component: PartialAttributesComponent},

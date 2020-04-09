@@ -1,1 +1,8 @@
-<p>dynamic-pseudo-class-selectors works!</p>
+<h1>Dynamic Pseudo Class Selectors</h1>
+<h2>Hyperlink pseudo-class</h2>
+<p>You can change these dynamically with the :link and :visited tags. :link has not been visisted and is a hyperlink.
+  :visited is a link that has been visited based on browser history. You can have a place holder tag that doesn't have a link.
+Make sure you don't fall into this trap.<br/>
+a.external:link, a[href^="http"]:link {{'{'}} color: slateblue;{{'}'}} <- This will apply only to external links that have
+not been visited</p>
+

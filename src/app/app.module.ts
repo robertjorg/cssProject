@@ -9,6 +9,7 @@ import { PartialAttributesComponent } from './AttributeSelectors/partial-attribu
 import { DocumentStructureComponent } from './AttributeSelectors/document-structure/document-structure.component';
 import { PseudoClassSelectorsComponent } from './AttributeSelectors/pseudo-class-selectors/pseudo-class-selectors.component';
 import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynamic-pseudo-class-selectors/dynamic-pseudo-class-selectors.component';
+import { HomeComponent } from './AttributeSelectors/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynam
     DocumentStructureComponent,
     PseudoClassSelectorsComponent,
     DynamicPseudoClassSelectorsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
