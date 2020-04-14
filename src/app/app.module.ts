@@ -10,6 +10,7 @@ import { DocumentStructureComponent } from './AttributeSelectors/document-struct
 import { PseudoClassSelectorsComponent } from './AttributeSelectors/pseudo-class-selectors/pseudo-class-selectors.component';
 import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynamic-pseudo-class-selectors/dynamic-pseudo-class-selectors.component';
 import { HomeComponent } from './AttributeSelectors/home/home.component';
+import { UiStatePseudoComponent } from './AttributeSelectors/ui-state-pseudo/ui-state-pseudo.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomeComponent } from './AttributeSelectors/home/home.component';
     PseudoClassSelectorsComponent,
     DynamicPseudoClassSelectorsComponent,
     HomeComponent,
+    UiStatePseudoComponent,
   ],
   imports: [
     BrowserModule,

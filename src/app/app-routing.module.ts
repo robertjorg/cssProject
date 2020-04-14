@@ -1,3 +1,4 @@
+import { UiStatePseudoComponent } from './AttributeSelectors/ui-state-pseudo/ui-state-pseudo.component';
 import { HomeComponent } from './AttributeSelectors/home/home.component';
 // tslint:disable-next-line:max-line-length
 import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynamic-pseudo-class-selectors/dynamic-pseudo-class-selectors.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
         { path: 'partial', component: PartialAttributesComponent},
         { path: 'document', component: DocumentStructureComponent},
         { path: 'pseudo', component: PseudoClassSelectorsComponent},
-        { path: 'dynamic', component: DynamicPseudoClassSelectorsComponent}
+        { path: 'dynamic', component: DynamicPseudoClassSelectorsComponent},
+        { path: 'uistate', component: UiStatePseudoComponent}
       ]
 
   }
