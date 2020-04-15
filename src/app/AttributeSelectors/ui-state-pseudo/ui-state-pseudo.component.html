@@ -1,3 +1,40 @@
 <h1>Ui State Pseudo Classes</h1>
 <img src="assets/UIPseudoClasses.png"><br/>
 <sup>*table taken from CSS: The Definitive Guide pg 82</sup>
+
+<h2>Enabled and disabled UI Elements</h2>
+<tr>
+  <th>Name</th>
+  <td><input type="text" value="your full name"></td>
+  </tr>
+  <tr>
+  <th>Title</th>
+  <td><input type="text" value="your job title"></td>
+  </tr>
+  <tr>
+  <th>E-mail</th>
+  <td><input type="text" value="disabled email" disabled></td>
+</tr>
+<br/>
+<table>
+  <th>Checkbox and psuedo</th>
+  <tr>
+    <input type="checkbox" id="new" name="new">
+    <label for="new">Sometimes Examples in the book don't work</label>
+  </tr>
+  <tr>
+    <input type="checkbox" id="work" name="work">
+    <label for="work">I found a way to get it to work</label>
+  </tr>
+  <tr>
+    <input type="checkbox" id="exmaple" name="exmaple" checked="true">
+    <label for="exmaple">This example was on the next age</label>
+  </tr>
+</table>
+
+<input type="email" placeholder="enter an email address" valid="false" required>
+<input type="email" placeholder="optional email address" valid="true" optional>
+Treat :valid with caution
+
+
+<input id="by-tens" type="number" min="0" max="200" step="10" value="23" />
