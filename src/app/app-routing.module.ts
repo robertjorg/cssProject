@@ -1,5 +1,6 @@
+import { HomeComponent } from './home/home.component';
+import { PseudoElementSelectorsComponent } from './AttributeSelectors/pseudo-element-selectors/pseudo-element-selectors.component';
 import { UiStatePseudoComponent } from './AttributeSelectors/ui-state-pseudo/ui-state-pseudo.component';
-import { HomeComponent } from './AttributeSelectors/home/home.component';
 // tslint:disable-next-line:max-line-length
 import { DynamicPseudoClassSelectorsComponent } from './AttributeSelectors/dynamic-pseudo-class-selectors/dynamic-pseudo-class-selectors.component';
 import { PseudoClassSelectorsComponent } from './AttributeSelectors/pseudo-class-selectors/pseudo-class-selectors.component';
@@ -21,7 +22,9 @@ const routes: Routes = [
         { path: 'document', component: DocumentStructureComponent},
         { path: 'pseudo', component: PseudoClassSelectorsComponent},
         { path: 'dynamic', component: DynamicPseudoClassSelectorsComponent},
-        { path: 'uistate', component: UiStatePseudoComponent}
+        { path: 'uistate', component: UiStatePseudoComponent},
+        { path: 'pseudoelement', component: PseudoElementSelectorsComponent},
+        { path: 'chapterTwo', loadChildren: './chapter-two/chapter-two.module#ChapterTwoModule'}
       ]
 
   }
