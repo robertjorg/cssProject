@@ -24,6 +24,7 @@ const routes: Routes = [
         { path: 'dynamic', component: DynamicPseudoClassSelectorsComponent},
         { path: 'uistate', component: UiStatePseudoComponent},
         { path: 'pseudoelement', component: PseudoElementSelectorsComponent},
+        { path: 'chapterOne', loadChildren: './chapter-one/chapter-one.module#ChapterOneModule'},
         { path: 'chapterTwo', loadChildren: './chapter-two/chapter-two.module#ChapterTwoModule'}
       ]
 
