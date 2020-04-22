@@ -6,10 +6,12 @@ import { ChapterOneComponent } from './chapter-one.component';
 
 
 @NgModule({
-  declarations: [ChapterOneComponent],
+  declarations: [
+    ChapterOneComponent
+  ],
   imports: [
     CommonModule,
-    ChapterOneRoutingModule
+    ChapterOneRoutingModule,
   ]
 })
 export class ChapterOneModule { }
