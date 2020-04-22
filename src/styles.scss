@@ -2,21 +2,42 @@
   background-color: gray;
 }
 
+:host{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #8E95A4;
+}
+
 h1 {
   text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .container {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
+  height: 100%
 }
 
 .container-right {
   width: 85%;
+  margin-left: 5px;
 }
 
 .container-left {
   width: 15%;
   overflow: hidden;
+  border-right: 1px solid black;
+  height: 100%;
 }

@@ -9,7 +9,7 @@ export const routes: Routes = [
     { path: '', component: ChapterThreeComponent,
     children: [
       { path: '', redirectTo: 'specificity', pathMatch: 'full' },
-      { path: '', component: SpecificityComponent },
+      { path: 'specificity', component: SpecificityComponent },
 
     ] }
   ]

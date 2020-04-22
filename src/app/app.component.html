@@ -1,8 +1,14 @@
-<h1 class="header">CSS Examples</h1>
-  <div class="links">
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a routerLink="/chapterOne" reouterLinkActive="active">Chapter One</a>
-    <a routerLink="/chapterTwo" reouterLinkActive="active">Chapter Two</a>
-    <a routerLink="/chapterThree" reouterLinkActive="active">Chapter Three</a>
-  </div>
-<router-outlet></router-outlet>
+    <div class="flex-row full-height">
+      <div class="top-header">
+        <h1 class="header">CSS Examples</h1>
+        <div class="links">
+          <a routerLink="/" routerLinkActive="active">Home</a>
+          <a routerLink="/chapterOne" reouterLinkActive="active">Chapter One</a>
+          <a routerLink="/chapterTwo" reouterLinkActive="active">Chapter Two</a>
+          <a routerLink="/chapterThree" reouterLinkActive="active">Chapter Three</a>
+        </div>
+      </div>
+      <div class="body-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
