@@ -1,14 +1,19 @@
+$background-color: #009999;
+$html-color: #005D5D;
+$header-color: #46B3B3;
+
 .background-grey {
   background-color: gray;
 }
 
-:host{
-  position: fixed;
-  top:0;
-  left: 0;
+html {
   width: 100vw;
   height: 100vh;
-  background-color: #8E95A4;
+  background-color: $html-color;
+}
+
+body {
+  min-height: 100%;
 }
 
 h1 {
@@ -20,7 +25,6 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .container {
@@ -40,4 +44,10 @@ h1 {
   overflow: hidden;
   border-right: 1px solid black;
   height: 100%;
+}
+
+.eighty-width {
+  width: 110vh;
+  background-color: $background-color;
+  justify-content: center;
 }
