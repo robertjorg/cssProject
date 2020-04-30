@@ -1,2 +1,29 @@
 <h1>Specificity</h1>
-<p>There are three mechanisms to apply CSS, specificity, inheritance, and the cascade.</p>
+<p>There are three mechanisms to apply CSS, specificity, inheritance, and the cascade.<br/>
+How do you know what rule wins out when there are multiple rules for one element?
+The property declaration with the highest specificity will win out. </p>
+
+<span>
+  There are rules to get specificity. Rules are calculated and provide and output in the format 0,0,0,0. The rules are
+  <ul>
+    <li>For every ID attribute value given in the selector, add 0,1,0,0.</li>
+    <li>For every class attribute value, attribute selection, or pseudo-class given in the selector, add 0,0,1,0.</li>
+    <li>For every element and pseudo-element given in the selector, add 0,0,0,1.</li>
+    <li>Combinators and the universal selector do not contribute anything to the specificity.</li>
+  </ul>
+  These rules combine to deteriming which item will win out. *There is a conflict resolution which will be written about later.
+</span>
+
+<div>
+  <h3>Examples of the rules:</h3>
+  <ol>
+    <li>h1 {{'{'}}color: red;{{'}'}} /* specificity = 0,0,0,1 */</li>
+    <li>p em {{'{'}}color: purple;{{'}'}} /* specificity = 0,0,0,2 */</li>
+    <li>.grape {{'{'}}color: purple;{{'}'}} /* specificity = 0,0,1,0 */</li>
+    <li>*.bright {{'{'}}color: yellow;{{'}'}} /* specificity = 0,0,1,0 */</li>
+    <li>p.bright em.dark {{'{'}}color: maroon;{{'}'}} /* specificity = 0,0,2,2 */</li>
+    <li>#id216 {{'{'}}color: blue;{{'}'}} /* specificity = 0,1,0,0 */</li>
+    <li>div#sidebar *[href] {{'{'}}color: silver;{{'}'}} /* specificity = 0,1,1,1 */</li>
+  </ol>
+</div>
+
