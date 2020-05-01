@@ -1,3 +1,4 @@
+import { DeclarationsAndSpecificityComponent } from './sections/declarations-and-specificity/declarations-and-specificity.component';
 import { SpecificityComponent } from './sections/specificity/specificity.component';
 import { ChapterThreeComponent } from './chapter-three.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,6 +11,7 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'specificity', pathMatch: 'full' },
       { path: 'specificity', component: SpecificityComponent },
+      { path: 'dands', component: DeclarationsAndSpecificityComponent}
 
     ] }
   ]

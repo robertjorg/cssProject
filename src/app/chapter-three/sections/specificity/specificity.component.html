@@ -26,5 +26,9 @@ The property declaration with the highest specificity will win out. </p>
     <li>h2 {{'{'}}color:silver{{'}'}} /* specificity = 0,0,0,1 */</li>
   </ul>
   The h2.graph element will win with more specificity.
+  <div>
+    This read read from left to right. If there is a one in the second place (0,1,0,0) this will win over a higher number
+    in the third and fourth places (0,0,1,7). a value of 1,0,0,0 will win over any value that does not have a 1 in the first place.
+  </div>
 </div>
 

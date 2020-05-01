@@ -1,0 +1,22 @@
+<h1>Declarations and Specificity</h1>
+<div>
+  If you have a rule: h1 {{'{'}} color: silver; background: black; {{'}'}} this will be ungrouped for specificity purposes.<br/>
+  This will become:
+  <ul>
+    <li>h1 {{'{'}} color: silver; {{'}'}}</li>
+    <li>hi {{'{'}} background: black; {{'}'}}</li>
+  </ul>
+  <div class="explanation">
+    Both will have a specificity of 0,0,0,1 for each declration. This will happen on group selectors as well <br/>
+    h1, h2.section {{'{'}} color: silver; background: black;{{'}'}} would become:
+    <ul>
+      <li>h1 {{'{'}} color: silver;{{'}'}} /* 0,0,0,1 */</li>
+      <li>h1 {{'{'}} background: black;{{'}'}} /* 0,0,0,1 */</li>
+      <li>h2.section {{'{'}} color: silver;{{'}'}} /* 0,0,1,1 */</li>
+      <li>h2.section {{'{'}} background: black;{{'}'}} /* 0,0,1,1 */</li>
+    </ul>
+    This will be important when there are multiple rules that match the same element and declarations clash.
+    All the rules are then calculated for the element they apply and get a styled result. This must be performed
+    on all elements, selectors, and declarations, but it is done automatically by the user agent, thankfully!
+  </div>
+</div>
