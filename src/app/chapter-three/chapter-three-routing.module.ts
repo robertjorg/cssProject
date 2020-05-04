@@ -1,3 +1,5 @@
+import { IdAttributeSelectorComponent } from './sections/id-attribute-selector/id-attribute-selector.component';
+import { UniversalSelectorSpecificityComponent } from './sections/universal-selector-specificity/universal-selector-specificity.component';
 import { DeclarationsAndSpecificityComponent } from './sections/declarations-and-specificity/declarations-and-specificity.component';
 import { SpecificityComponent } from './sections/specificity/specificity.component';
 import { ChapterThreeComponent } from './chapter-three.component';
@@ -11,7 +13,9 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'specificity', pathMatch: 'full' },
       { path: 'specificity', component: SpecificityComponent },
-      { path: 'dands', component: DeclarationsAndSpecificityComponent}
+      { path: 'dands', component: DeclarationsAndSpecificityComponent },
+      { path: 'universal', component: UniversalSelectorSpecificityComponent },
+      { path: 'idattribute', component: IdAttributeSelectorComponent }
 
     ] }
   ]
