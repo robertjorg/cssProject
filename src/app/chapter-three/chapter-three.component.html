@@ -2,12 +2,17 @@
 <hr />
 <div class="container">
   <div class="container-left">
-    Sections:
+    Sections: {{expand}}
     <div class="links">
-      <a routerLink="./specificity" routerLinkActive="active">Specificity</a>
-      <a routerLink="./dands" routerLinkActive="active">Declarations and Specificity</a>
-      <a routerLink="./universal" routerLinkActive="active">Universal Selector Specificity</a>
-      <a routerLink="./idattribute" routerLinkActive="active">ID and Attribute Selector Specificity</a>
+      <a routerLink="./specificity" (click)="OnClick('true')" routerLinkActive="active">Specificity*</a>
+      <a id="sub-section" *ngIf="expand" routerLink="specificity/dands" routerLinkActive="active">Declarations and Specificity</a>
+      <a id="sub-section" *ngIf="expand" routerLink="specificity/universal" routerLinkActive="active">Universal Selector Specificity</a>
+      <a id="sub-section" *ngIf="expand" routerLink="specificity/idattribute" routerLinkActive="active">ID and Attribute Selector Specificity</a>
+      <a id="sub-section" *ngIf="expand" routerLink="specificity/inline" routerLinkActive="active">Inline Style Specificity</a>
+      <a id="sub-section" *ngIf="expand" routerLink="specificity/importance" routerLinkActive="active">Importance</a>
+      <a routerLink="./inheritance" (click)="OnClick('false')" routerLinkActive="active">Inheritance</a>
+
+      <div *ngIf="expand">HI MOM</div>
     </div>
   </div>
   <div class="container-right">

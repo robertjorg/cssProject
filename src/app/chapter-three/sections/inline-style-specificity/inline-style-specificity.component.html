@@ -1,0 +1,9 @@
+<h1>Inline Style Specificity</h1>
+<div>The first zero in all specificities is reserved for inline style declarations.<br/>
+An example:
+<ol>
+  <li>h1#meadow {{'{'}}color: red;{{'}'}} /* 0,1,0,0</li>
+  <li>{{'<'}} h1 id="meadow" style="color: green;" {{'>'}} The Meadow Party {{'<'}}h1{{'>'}} /* 1,0,0,0</li>
+</ol></div>
+
+<h2 id="meadow" style="color:green;" >The Meadow Party</h2>
