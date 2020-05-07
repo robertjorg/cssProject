@@ -1,22 +1,12 @@
 @import "src/styles.scss";
 
-.full-height {
-  min-height: 100%;
-}
-
 .header {
   top: 0;
   position: fixed;
   background-color: $header-color;
   padding-bottom: 10px;
-  width: 79.4%;
-}
-
-.body-container {
   width: 80%;
-  margin: auto;
-  padding-top: 120px;
-  background-color: $background-color;
+  max-height: $header-height;
 }
 
 .links {

@@ -1,6 +1,7 @@
 $background-color: #46B3B3;
 $html-color: #005D5D;
 $header-color: #009999;
+$header-height: 110px;
 
 .background-grey {
   background-color: gray;
@@ -8,14 +9,19 @@ $header-color: #009999;
 
 html {
   width: 100%;
-  min-height: 100%;
   background-color: $html-color;
 }
 
-body {
-  min-height: 100%;
+html, body {
+  height: 100% !important;
+  margin: 0 !important;
 }
 
+#main-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1 {
   text-align: center;
 }
@@ -31,7 +37,6 @@ h1 {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  height: 100%;
   margin-bottom: 15px;
 }
 
@@ -48,9 +53,10 @@ h1 {
   min-height: 100%;
 }
 
-.eighty-width {
+.body-width {
   background-color: $background-color;
   width: 100%;
+  margin-top: $header-height - 1;
 }
 
 #sub-section {
