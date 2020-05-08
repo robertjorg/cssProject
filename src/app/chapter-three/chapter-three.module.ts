@@ -9,6 +9,7 @@ import { IdAttributeSelectorComponent } from './sections/id-attribute-selector/i
 import { InlineStyleSpecificityComponent } from './sections/inline-style-specificity/inline-style-specificity.component';
 import { ImportanceComponent } from './sections/importance/importance.component';
 import { InheritanceComponent } from './sections/inheritance/inheritance.component';
+import { CascadeComponent } from './sections/cascade/cascade.component';
 
 
 
@@ -21,7 +22,8 @@ import { InheritanceComponent } from './sections/inheritance/inheritance.compone
     IdAttributeSelectorComponent,
     InlineStyleSpecificityComponent,
     ImportanceComponent,
-    InheritanceComponent
+    InheritanceComponent,
+    CascadeComponent
   ],
   imports: [
     CommonModule,

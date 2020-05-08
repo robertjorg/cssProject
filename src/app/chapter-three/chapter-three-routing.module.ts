@@ -1,3 +1,4 @@
+import { CascadeComponent } from './sections/cascade/cascade.component';
 import { InheritanceComponent } from './sections/inheritance/inheritance.component';
 import { ImportanceComponent } from './sections/importance/importance.component';
 import { InlineStyleSpecificityComponent } from './sections/inline-style-specificity/inline-style-specificity.component';
@@ -21,7 +22,8 @@ export const routes: Routes = [
       { path: 'specificity/idattribute', component: IdAttributeSelectorComponent },
       { path: 'specificity/inline', component: InlineStyleSpecificityComponent },
       { path: 'specificity/importance', component: ImportanceComponent },
-      { path: 'inheritance', component: InheritanceComponent}
+      { path: 'inheritance', component: InheritanceComponent },
+      { path: 'cascade', component: CascadeComponent }
 
     ] }
   ]

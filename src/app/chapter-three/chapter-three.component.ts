@@ -7,27 +7,23 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./chapter-three.component.scss']
 })
 export class ChapterThreeComponent implements OnInit, OnDestroy {
-  expand = false;
+  expand = 'none';
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     if (this.router.url.indexOf('specificity') !== -1) {
-      this.expand = true;
+      this.expand = 'specificity';
     } else {
-      this.expand = false;
+      this.expand = 'none';
     }
+  }
+
+  ngOnDestroy(): void {
+    this.expand = 'none';
   }
 
   OnClick(expand) {
-    if (expand === 'true') {
-      this.expand = true;
-    } else {
-      this.expand = false;
+    this.expand = expand;
     }
-  }
-
-  ngOnDestroy() {
-    this.expand = false;
-  }
 }
