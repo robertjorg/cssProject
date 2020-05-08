@@ -14,7 +14,11 @@ export class ChapterThreeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     if (this.router.url.indexOf('specificity') !== -1) {
       this.expand = 'specificity';
-    } else {
+    }
+    else if (this.router.url.indexOf('cascade') !== -1) {
+      this.expand = 'cascade';
+    }
+    else {
       this.expand = 'none';
     }
   }

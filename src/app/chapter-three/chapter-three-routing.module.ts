@@ -1,3 +1,5 @@
+import { SortBySpecificityComponent } from './sections/cascade/sub-sections/sort-by-specificity/sort-by-specificity.component';
+import { WeithAndOriginComponent } from './sections/cascade/sub-sections/weith-and-origin/weith-and-origin.component';
 import { CascadeComponent } from './sections/cascade/cascade.component';
 import { InheritanceComponent } from './sections/inheritance/inheritance.component';
 import { ImportanceComponent } from './sections/importance/importance.component';
@@ -23,7 +25,9 @@ export const routes: Routes = [
       { path: 'specificity/inline', component: InlineStyleSpecificityComponent },
       { path: 'specificity/importance', component: ImportanceComponent },
       { path: 'inheritance', component: InheritanceComponent },
-      { path: 'cascade', component: CascadeComponent }
+      { path: 'cascade', component: CascadeComponent },
+      { path: 'cascade/weightAndOrigin', component: WeithAndOriginComponent },
+      { path: 'cascade/sort', component: SortBySpecificityComponent },
 
     ] }
   ]

@@ -10,6 +10,8 @@ import { InlineStyleSpecificityComponent } from './sections/inline-style-specifi
 import { ImportanceComponent } from './sections/importance/importance.component';
 import { InheritanceComponent } from './sections/inheritance/inheritance.component';
 import { CascadeComponent } from './sections/cascade/cascade.component';
+import { WeithAndOriginComponent } from './sections/cascade/sub-sections/weith-and-origin/weith-and-origin.component';
+import { SortBySpecificityComponent } from './sections/cascade/sub-sections/sort-by-specificity/sort-by-specificity.component';
 
 
 
@@ -23,7 +25,9 @@ import { CascadeComponent } from './sections/cascade/cascade.component';
     InlineStyleSpecificityComponent,
     ImportanceComponent,
     InheritanceComponent,
-    CascadeComponent
+    CascadeComponent,
+    WeithAndOriginComponent,
+    SortBySpecificityComponent
   ],
   imports: [
     CommonModule,

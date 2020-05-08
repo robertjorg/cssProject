@@ -1,0 +1,23 @@
+<h1>Weight and Origin</h1>
+<div>If two rules apply to an element and one has !important marked,
+  the one with !important will win. Even if there is a style in html element !important will win out. For example:
+<ul>
+  <li>p {{'{'}}color: gray !important;{{'}'}}</li>
+  <li>{{'<'}}p style="color: black;"{{'>'}}Well, {{'<'}}em{{'>'}}hello{{'<'}}/em{{'>'}} there!{{'<'}}/p{{'>'}}</li>
+</ul></div>
+
+<div>The first item in the list wins due to the important. But if you add important to the inline stayle it will win.</div>
+
+
+<p style="color: black;">Well, <em>hello</em> there!</p>
+<p style="color: black !important;">Well, <em>hello</em> there!</p>
+
+
+<div>When the weight of the rule is the same, the origin of a rule is considered. The author's style sheet will win over the reader's
+  style sheet. Unless there is an !important on both. Then the reader's style sheet will win.</div>
+<div>I wasn't sure what author and user style sheets were, so I looked them up.
+  <ul>
+    <li>Author Style Sheets: sheets supplied by the auther of the webpage.</li>
+    <li>User Style Sheets: sheets supplied by the user of the browser.</li>
+  </ul>
+</div>

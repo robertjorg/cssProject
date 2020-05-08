@@ -11,7 +11,9 @@
       <a id="sub-section" *ngIf="expand === 'specificity'" routerLink="specificity/inline" routerLinkActive="active">Inline Style Specificity</a>
       <a id="sub-section" *ngIf="expand === 'specificity'" routerLink="specificity/importance" routerLinkActive="active">Importance</a>
       <a routerLink="./inheritance" (click)="OnClick('none')" routerLinkActive="active">Inheritance</a>
-      <a routerLink="./cascade" (click)="OnClick('cascade')" routerLinkActive="active">Cascade</a>
+      <a routerLink="./cascade" (click)="OnClick('cascade')" routerLinkActive="active">Cascade*</a>
+      <a id="sub-section" routerLink="./cascade/weightAndOrigin" *ngIf="expand === 'cascade'" routerLinkdActive="active">Weight and Origin</a>
+      <a id="sub-section" routerLink="./cascade/sort" *ngIf="expand === 'cascade'" routerLinkdActive="active">Sort by Specificity</a>
 
       <span class="footnote">*subsections will show when you click on the section</span>
     </div>
