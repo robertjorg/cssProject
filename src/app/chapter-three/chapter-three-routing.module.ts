@@ -11,6 +11,7 @@ import { SpecificityComponent } from './sections/specificity/specificity.compone
 import { ChapterThreeComponent } from './chapter-three.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { SortByOrderComponent } from './sections/cascade/sub-sections/sort-by-order/sort-by-order.component';
 export const routes: Routes = [
   {
   path: '',
@@ -28,6 +29,7 @@ export const routes: Routes = [
       { path: 'cascade', component: CascadeComponent },
       { path: 'cascade/weightAndOrigin', component: WeithAndOriginComponent },
       { path: 'cascade/sort', component: SortBySpecificityComponent },
+      { path: 'cascade/order', component: SortByOrderComponent },
 
     ] }
   ]

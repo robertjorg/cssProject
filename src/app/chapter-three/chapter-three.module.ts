@@ -12,6 +12,7 @@ import { InheritanceComponent } from './sections/inheritance/inheritance.compone
 import { CascadeComponent } from './sections/cascade/cascade.component';
 import { WeithAndOriginComponent } from './sections/cascade/sub-sections/weith-and-origin/weith-and-origin.component';
 import { SortBySpecificityComponent } from './sections/cascade/sub-sections/sort-by-specificity/sort-by-specificity.component';
+import { SortByOrderComponent } from './sections/cascade/sub-sections/sort-by-order/sort-by-order.component';
 
 
 
@@ -27,7 +28,8 @@ import { SortBySpecificityComponent } from './sections/cascade/sub-sections/sort
     InheritanceComponent,
     CascadeComponent,
     WeithAndOriginComponent,
-    SortBySpecificityComponent
+    SortBySpecificityComponent,
+    SortByOrderComponent
   ],
   imports: [
     CommonModule,

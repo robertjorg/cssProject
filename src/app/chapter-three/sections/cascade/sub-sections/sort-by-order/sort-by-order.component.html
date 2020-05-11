@@ -1,0 +1,14 @@
+<h1>Sorting by Order</h1>
+<div>If all else is equal, the order of rules in the style sheet matter. The rule that occurs later in the style sheet wins out.
+  <ul>
+    <li>h1 {{'{'}}color: red;{{'}'}}</li>
+    <li>h1 {{'{'}}color: blue;{{'}'}}</li>
+  </ul>
+</div>
+<div>You can see that the blue h1 won out on the h1 heading above. The rules have the same weight, origin, and specificity. This
+  means order matters. If there is an @import in the style sheet, the import is treated as though all rules happened at the point
+  of the @import.<br/>
+  The order of ruling give us the recommendation of LVFHA or link-visited-focus-hover-active. If you put link and visited
+  after the other three, they will never show focus, hover, or active because link or visited would always be true.
+  You could use pseudo rules to get over this a:link:hover or a:visited:hover.
+</div>

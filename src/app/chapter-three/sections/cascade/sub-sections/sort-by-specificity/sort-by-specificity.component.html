@@ -1,1 +1,7 @@
 <h1>Sort by Specificity</h1>
+<div>Elements that have conflicting declarations and have the same explicit weight and origin, use specificity.</div>
+
+p#bright {{'{'}}color: silver;{{'}'}} /* 0 1 0 1
+p {{'{'}}color: black;{{'}'}} /* 0 0 0 1
+<p id="bright">Well, hello there!</p>
+<div>p#bright had a higher specificity so will show in our p id="bright" element</div>
