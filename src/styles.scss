@@ -68,3 +68,15 @@ h1 {
   font-weight: lighter;
   font-size: 10px;
 }
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+
+  a {
+    align-items: left;
+    margin: 5px 0 0 10px
+  }
+}
