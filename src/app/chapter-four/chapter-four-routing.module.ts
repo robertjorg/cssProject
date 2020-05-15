@@ -1,3 +1,4 @@
+import { KeywordStringsOtherTextComponent } from './sections/keyword-strings-other-text/keyword-strings-other-text.component';
 import { ValuesAndUnitsComponent } from './sections/values-and-units/values-and-units.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ChapterFourComponent } from './chapter-four.component';
@@ -11,6 +12,7 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'valuesAndUnits', pathMatch: 'full' },
       { path: 'valuesAndUnits', component: ValuesAndUnitsComponent },
+      { path: 'keywords', component: KeywordStringsOtherTextComponent },
     ] }
   ]
   }
