@@ -1,3 +1,4 @@
+import { NumbersPercentagesComponent } from './sections/numbers-percentages/numbers-percentages.component';
 import { KeywordStringsOtherTextComponent } from './sections/keyword-strings-other-text/keyword-strings-other-text.component';
 import { ValuesAndUnitsComponent } from './sections/values-and-units/values-and-units.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -13,6 +14,7 @@ export const routes: Routes = [
       { path: '', redirectTo: 'valuesAndUnits', pathMatch: 'full' },
       { path: 'valuesAndUnits', component: ValuesAndUnitsComponent },
       { path: 'keywords', component: KeywordStringsOtherTextComponent },
+      { path: 'numbers', component: NumbersPercentagesComponent },
     ] }
   ]
   }

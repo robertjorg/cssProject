@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ChapterFourRoutingModule } from './chapter-four-routing.module';
 import { ValuesAndUnitsComponent } from './sections/values-and-units/values-and-units.component';
 import { KeywordStringsOtherTextComponent } from './sections/keyword-strings-other-text/keyword-strings-other-text.component';
+import { NumbersPercentagesComponent } from './sections/numbers-percentages/numbers-percentages.component';
 
 
 
@@ -11,7 +12,8 @@ import { KeywordStringsOtherTextComponent } from './sections/keyword-strings-oth
   declarations: [
     ChapterFourComponent,
     ValuesAndUnitsComponent,
-    KeywordStringsOtherTextComponent
+    KeywordStringsOtherTextComponent,
+    NumbersPercentagesComponent
   ],
   imports: [
     CommonModule,

@@ -4,8 +4,8 @@
   <li><a (click)="scroll(keywords)" #keywords>Keywords</a></li>
   <li><a (click)="scroll(strings)">Strings</a></li>
   <li><a (click)="scroll(urls)">URLs</a></li>
-  <li>Images</li>
-  <li>Identifiers</li>
+  <li><a (click)="scroll(images)">Images</a></li>
+  <li><a (click)="scroll(identifiers)">Identifiers</a></li>
 </ul>
 
 <h2>Keywords</h2>
@@ -41,7 +41,7 @@ to normal and declaring <i>fontweight: initial</i> is the same as declaring <i>f
 </ul><br/>
 The <i>all</i> will force all properties below section and div with id of example to inherit.</div>
 
-<h2 #urls>Strings</h2>
+<h2>Strings</h2>
 <div>
 A string value is an arbitrary sequence of characters in quote marks. Some simple examples:
 <ul>
@@ -54,11 +54,21 @@ mark, or you could have troubles. You can escape quotemarks inside quotemarks, o
 'There\'s never been a "string quartet" that I\'ve not like.'
 </div>
 
-<h2 id='urls'>URLs</h2>
-<div>Section for URLs</div>
+<h2 #urls>URLs</h2>
+<div>Absolute URLs that will work no matter where it's found. That is because it defines a location in web space.<br/>
+Relative URLs are relative to the document that defines them.<br/>
+You can use relative or absolute URLs in CSS. Relative URLs are relative to the stylesheet.
+Examples:<br/>
+@import url(http://web.waffles.org/toppings/special/toppings.css);<br/>
+@import url(../special/toppings.css);<br/>
+There cannot be a space between the opening parenthesis and URL. The .. will go back one folder relative to where the
+ stylesheet is.</div>
 
-<h2 id='images'>Images</h2>
-<div>Section for Images</div>
+<h2 #images>Images</h2>
+<div>An <i>image value</i> is a reference to an image. Easy enough. They are represented by <i>{{'<'}}image{{'>'}}</i><br/>
+Most basic level of support would recognize this tag as a url value</div>
 
-<h2 id='identifiers'>Identifiers</h2>
-<div>Section for Identifiers</div>
+<h2 #identifiers>Identifiers</h2>
+<div>Only a few properties accept and identifier value, which are user defined identifiers of some kind. These identifiers
+  are words and ARE case-sensitive. Be careful not to create an identifier with an identical valid keyword.
+</div>
