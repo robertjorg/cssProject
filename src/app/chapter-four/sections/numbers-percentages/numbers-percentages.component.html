@@ -1,1 +1,23 @@
-<p>numbers-percentages works!</p>
+<h1>Numbers and Percentages</h1>
+<div>Serve as a foundation for other value types, eg. font sizes can be defined using the em identifier preceded by a number. Let's define the numbers.</div>
+<ul>
+  <li><a (click)="scroll(integers)" #integers>Integers</a></li>
+  <li><a (click)="scroll(numbers)">Numbers</a></li>
+  <li><a (click)="scroll(percentages)">Percentages</a></li>
+  <li><a (click)="scroll(fractions)">Fractions</a></li>
+</ul>
+
+<h2 #numbers>Integers</h2>
+<div>Integer values are one or more numbers that are either positive or negative. Examples: 1, -598, 46, 10000, etc.<br/>
+Integers that fall outside of a defined range will be considered invalid and cause the entire declaration to be ignored. Sometimes you can get a value outside the range to be accepted
+ to the closest value in the declared range, this is known as clamping. If there is no restricted range, the users agent may accept values up to +-1,073,741,824.
+ Pretty large number, hopefully you find a number in there that works!</div>
+
+ <h2>Numbers</h2>
+ <div>Number values can either be an integer or a real number. These can also be positive or negative. Some examples: 1.234, -4.321, etc. <br/></div>
+
+ <h2 #percentages>Percentages</h2>
+ <div></div>
+
+ <h2 #fractions>Fractions</h2>
+ <div></div>
