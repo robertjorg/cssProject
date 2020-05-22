@@ -1,3 +1,4 @@
+import { DistancesComponent } from './sections/distances/distances.component';
 import { NumbersPercentagesComponent } from './sections/numbers-percentages/numbers-percentages.component';
 import { KeywordStringsOtherTextComponent } from './sections/keyword-strings-other-text/keyword-strings-other-text.component';
 import { ValuesAndUnitsComponent } from './sections/values-and-units/values-and-units.component';
@@ -15,6 +16,7 @@ export const routes: Routes = [
       { path: 'valuesAndUnits', component: ValuesAndUnitsComponent },
       { path: 'keywords', component: KeywordStringsOtherTextComponent },
       { path: 'numbers', component: NumbersPercentagesComponent },
+      { path: 'distances', component: DistancesComponent },
     ] }
   ]
   }

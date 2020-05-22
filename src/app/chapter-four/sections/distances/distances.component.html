@@ -1,0 +1,46 @@
+<h1>Distances</h1>
+<div>Length is used in CSS in many properties. These include margins which depend on length measurements to display various elements correctly.<br/>
+Length measurements must be positive or negative numbers followed by a label. All length measurements are followed by a short abbreviation which shows what unit should
+be applied to the length.<br/>
+Length units are divided into two types: absolute length units and relative length units.</div>
+<ul>
+  <li><a (click)="scroll(absolute)" #absolute>Absolute Length Units</a></li>
+  <li><a (click)="scroll(resolution)">Resolution Units</a></li>
+  <li><a (click)="scroll(relative)">Relative Length Units</a></li>
+</ul>
+
+<h2>Absolute Length Units</h2>
+<div>There are six types of absolute length units, which are almost unusable in regurlar web design. These are:
+  <ul>
+    <li>Inches (in) - Inches just like used in the US...why though, I don't know since everyone else uses the metric system</li>
+    <li>Centimeters (cm) - Include the rest of the world. 2.54 centimteres to an inch, and one centimeter equals 0.394 inches.</li>
+    <li>Millimeters (mm) - One tenth of a centimeter</li>
+    <li>Quarter-millimeters (q) - 4q is the same as one millimeter. Only Firefox supported this as of late 2016.</li>
+    <li>Points (pt) - Used for printers and typwriters. Traditionally, there are 72 points to an inch.</li>
+    <li>Picas (pc) - Another typographical term. there are 6 picas to an inch</li>
+    <li>Pixels (px) - </li>
+  </ul>
+  Hmm...That is seven items, one more then six, but the book said six, so I'm leaving it.<br/>
+  Absolute units are useful in defining stylesheets for printed documents.
+</div>
+
+<h3>Pixel Lengths</h3>
+<div>Look closely and you may see the pixels (little boxes) in your screen. That box is a pixel.<br/>
+Declaring <i>font-size: 18px;</i> will most likely actually use 18 pixels on your screen. Printers are a different story.<br/>
+Images are more important for pixels. The good thing is, agents have been getting pretty good at scaling routines.</div>
+
+<h3>Pixel theory</h3>
+<div>For resolutions with density significatntly different thatn 96 pixels per inch, user agents should scale pixels to a recommended ppi. CSS3 that is 96 ppi.</div>
+
+<h2 #resolution>Resolution Units</h2>
+<div>Media queries brought new unit types:
+  <ul>
+    <li>Dots per inch (dpi) - the number of display dots per linear inch.</li>
+    <li>Dots per centimerter (dpcm) - the number of display dots per linear centimeter</li>
+    <li>Dots per pixel unit (dppx) - the number of display dots per CSS px unit. CSS3, 1dppx = 96dpi</li>
+  </ul>
+  These were only used in terms of media queries as of late 2017.
+</div>
+
+<h2 #relative>Relative Length Units</h2>
+<div></div>
