@@ -43,4 +43,31 @@ Images are more important for pixels. The good thing is, agents have been gettin
 </div>
 
 <h2 #relative>Relative Length Units</h2>
-<div></div>
+<div>Relative units are measured relative to other things, like screen resolution.</div>
+<h3>em and ex units</h3>
+<div>One "em" is defined as the font-size for a given font. If the font size of an element is 14 pixels, then for that element it is equal to 1em.<br/>
+If you have an h1 element with 24px font-size, an h2 element with 18px font size, and a paragraph element with a 12px font size. When you set the margin left
+of 1em, you will get left margins of 24px, 18px, and 12px, respectively.<br/>
+One em is equal to the width of a lowercase <i>m</i> in the font used, that is where the name actually came from. But that is guaranteed in CSS.<br/>
+ex refers to the height of a lowercase x in the font being used.</div>
+<h3>The rem unit</h3>
+<div>The <i>rem</i> unit is based on font size, not a band. <i>em</i> is calculated using the font size of the element which it is applied, <i>rem</i> <b>always</b>
+is calcuated using the root element.<br/>
+You can set a font size by doing html {{'{'}} font-size: 13px;{{'}'}}<br/>
+This will always give 1rem a size of 13 for font-size. However if you do html {{'{'}} font-size: 75%;{{'}'}} you will get 1rem equal to 75% of the user's default font size.<br/>
+You aren't restricted to 1rem. You can use any real number, same as em unit, so this will let you change the size for all your elements.</div>
+<h3>The ch unit</h3>
+<div>This is meant to represent one character and was added in CSS3. The actual definition is "Equal to the advance measure of the “0” (ZERO, U+0030) glyph found in the font used
+  to render it." Essentially, this is from the start of the character to the end of the character is the measure of the character. This generally includes the width of the
+glyph plus any built in space on the sides.</div>
+<h3>Viewport-relative units</h3>
+<div>Viewport units were also added in CSS3. These are calculated in repsect to the size of the viewport - browser window, printable area, etc. There are a view viewport units:
+  <ol>
+    <li>Viewport width unit (vw) - this is calculated in respect to the viewport's width. It is calculated by taking the viewport width and dividing it by 100. A viewport
+      with a width of 937 would have 1vw = 9.37. Changing the width of the viewport would also change the size of 1vw.
+    </li>
+    <li>Viewport height unit (vh) - Same as width, except using height instead.</li>
+    <li>Viewport minimum unit (vmin)</li>
+    <li>Viewport maximum unit (vmax)</li>
+  </ol>
+</div>
