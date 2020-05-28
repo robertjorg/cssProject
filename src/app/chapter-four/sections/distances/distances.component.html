@@ -67,7 +67,9 @@ glyph plus any built in space on the sides.</div>
       with a width of 937 would have 1vw = 9.37. Changing the width of the viewport would also change the size of 1vw.
     </li>
     <li>Viewport height unit (vh) - Same as width, except using height instead.</li>
-    <li>Viewport minimum unit (vmin)</li>
-    <li>Viewport maximum unit (vmax)</li>
+    <li>Viewport minimum unit (vmin) - This is 1/100 of the viewport's width or height, whichever is lesser. If you had 937 pixels wide by 650 pixels tall 1vmin would be 6.5px</li>
+    <li>Viewport maximum unit (vmax) - This is 1/100 of the viewport's width or height, whichever is greater. Give the example above you would have 1vmax = 9.37px.</li>
   </ol>
+These length units can be used whereever they are allowed. These are useful when creating full-viewport interfaces, such as those for mobile devices, because the elements are allowed
+to be sized in comparrison to the actual screen size.
 </div>
