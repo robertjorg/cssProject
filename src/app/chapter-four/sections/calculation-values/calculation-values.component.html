@@ -1,0 +1,24 @@
+<h1>Calculation Values</h1>
+<div>CSS has a calc() value that allows for simple math to be done. You can use addition, subraction, multiplication and division.<br/>
+You can make your paragraphs be 2em less then 90%. You would do this by using the calc expression:<br/>
+p {{'{'}}width: calc(90% - 2em);{{'}'}}<br/>
+There are some basic limitations that need to be kept in mind for calc(). Here are the limitations:<br/>
+<ol>
+  <li>
+    Both sides of a + or - sign must have the same unit type. 5 + 3.4 is valid and results in 8.4. However, 5em + 3.4 is not valud, one side has a length unit
+    and the other does not. 5em + 10px <i>is</i> valid, both em and px are length units.
+  </li>
+  <li>
+    Multiplication must have one value that is a number. 2.5rem * 2 and 2 * 2.5rem are both valid and result in 5 rem. However, 2.5 rem * 2 rem is <i>not</i> valid because the result
+  would be 5rem^2 and length units cannot be area units.
+  </li>
+  <li>
+    Division must have a number on the right side of the equation. If the left side is an integer, the restul is a number. This means 30em / 2.75 is valid but 30 / 2.75 em is not.
+  </li>
+  <li>
+    Any time there is a division by zero, calc is invalid, just like real life.
+  </li>
+</ol>
+You must include whitespace on either side of the operators + and -. Whitespace is not required for * and /. This takes away any questions about values that may have a negative number.
+<br/>
+User agens must support a minimum of 20 terms inside of a calc() expression. Any number of terms greater then the agent's limit will be invalid.</div>

@@ -6,6 +6,8 @@ import { ValuesAndUnitsComponent } from './sections/values-and-units/values-and-
 import { KeywordStringsOtherTextComponent } from './sections/keyword-strings-other-text/keyword-strings-other-text.component';
 import { NumbersPercentagesComponent } from './sections/numbers-percentages/numbers-percentages.component';
 import { DistancesComponent } from './sections/distances/distances.component';
+import { CalculationValuesComponent } from './sections/calculation-values/calculation-values.component';
+import { AttributeValuesComponent } from './sections/attribute-values/attribute-values.component';
 
 
 
@@ -15,7 +17,9 @@ import { DistancesComponent } from './sections/distances/distances.component';
     ValuesAndUnitsComponent,
     KeywordStringsOtherTextComponent,
     NumbersPercentagesComponent,
-    DistancesComponent
+    DistancesComponent,
+    CalculationValuesComponent,
+    AttributeValuesComponent
   ],
   imports: [
     CommonModule,
