@@ -1,0 +1,58 @@
+<h1>Color</h1>
+<div>You can use named olors or use hexdecimal codes. You could also use some other methods, let's take a look.<br/>
+Here we have:<span #namedColors></span>
+<ul>
+  <li><a (click)="scroll(namedColors)">Named Colors</a></li>
+  <li><a (click)="scroll(rgb)">Colors by RGB and RGBa</a></li>
+  <li>colors by HSL and HSLa</li>
+  <li>Color Keywords</li>
+</ul></div>
+<h2>Named Colors</h2>
+<div>You are able to use the name of the colors you want to use. CSS calls this, <i>named colors</i>. Originally there were 16 colors:
+<ul>
+  <li>aqua</li>
+  <li>black</li>
+  <li>blue</li>
+  <li>fuchsia</li>
+  <li>gray</li>
+  <li>green</li>
+  <li>lime</li>
+  <li>maroon</li>
+  <li>navy</li>
+  <li>olive</li>
+  <li>purple</li>
+  <li>red</li>
+  <li>silver</li>
+  <li>teal</li>
+  <li #rgb>white</li>
+  <li>yellow</li>
+</ul>
+You could do things like h1 {{'{'}} color: silver;{{'}'}}<br/>
+There are other colors beyond the original 16 now, the list now has 148 keyword colors.</div>
+<h2>Colors by RGB and RGBa</h2>
+<div>You can create a color by combining different levels of red, green, and blue. This is called a RGB color. There are few limits on the colors that can be produced using this
+  method. There are four ways to affect color in RGB.
+</div>
+<h3>Functional RGB Colors</h3>
+<div>You can use rgb(color) and color would use either a percentage (0-100%) or integer (0-255). Using the percent notation you could specify white and black:
+  <ul>
+    <li class="my-white">rgb(100%,100%,100%) - font white</li>
+    <li class="my-black">rgb(0%,0%,0%) - font black</li>
+  </ul>
+  Or using the integer-triplet notation the same colors would be:
+  <ul>
+    <li class="my-white">rgb(255,255,255) - font white</li>
+    <li class="my-black">rgb(0,0,0) - font black</li>
+  </ul>
+  Remember that you cannot mix integers and percentages in the same color value. YOu would change the rgb values to get different shades of colors.
+</div>
+<h3>RGBa colors</h3>
+<div>This is similar to RGB, except the a stands for alpha. This is a measure of opacity. You can do half transparent white and by:
+  <ul>
+    <li class="half-white">rgb(100%,100%,100%,0.5)</li>
+    <li class="half-white">rgb(255,255,255,0.5)</li>
+  </ul>
+  Completely transparent would have a value of 0 in the alpha position. rgb(0,0,0) and rgb(0,0,0,1) would be the same black color. Alpha are real numbers ranging from 0 to 1.
+  You cannot us a percent as the alpha value.
+</div>
+<h3>Hexadecimal RGB colors</h3>

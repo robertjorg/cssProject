@@ -8,6 +8,7 @@ import { NumbersPercentagesComponent } from './sections/numbers-percentages/numb
 import { DistancesComponent } from './sections/distances/distances.component';
 import { CalculationValuesComponent } from './sections/calculation-values/calculation-values.component';
 import { AttributeValuesComponent } from './sections/attribute-values/attribute-values.component';
+import { ColorComponent } from './sections/color/color.component';
 
 
 
@@ -19,7 +20,8 @@ import { AttributeValuesComponent } from './sections/attribute-values/attribute-
     NumbersPercentagesComponent,
     DistancesComponent,
     CalculationValuesComponent,
-    AttributeValuesComponent
+    AttributeValuesComponent,
+    ColorComponent
   ],
   imports: [
     CommonModule,

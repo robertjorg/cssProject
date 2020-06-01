@@ -1,3 +1,4 @@
+import { ColorComponent } from './sections/color/color.component';
 import { AttributeValuesComponent } from './sections/attribute-values/attribute-values.component';
 import { CalculationValuesComponent } from './sections/calculation-values/calculation-values.component';
 import { DistancesComponent } from './sections/distances/distances.component';
@@ -21,6 +22,7 @@ export const routes: Routes = [
       { path: 'distances', component: DistancesComponent },
       { path: 'calculation', component: CalculationValuesComponent },
       { path: 'attribute', component: AttributeValuesComponent },
+      { path: 'color', component: ColorComponent },
     ] }
   ]
   }

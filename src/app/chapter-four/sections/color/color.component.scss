@@ -1,0 +1,28 @@
+h1 {
+  color: silver;
+}
+
+.my-white {
+  color: rgb(100%,100%,100%);
+  background-color: rgb(0,0,0);
+}
+
+.my-black {
+  color: rgb(0%,0%,0%);
+  background-color: rgb(255,255,255);
+}
+
+
+a {
+  color: blue;
+  cursor: pointer;
+}
+
+.half-white {
+  color: rgb(255,255,255,0.5);
+
+}
+
+.half-black {
+  background-color: rgb(0,0,0,0.5);
+}
