@@ -9,6 +9,7 @@ import { DistancesComponent } from './sections/distances/distances.component';
 import { CalculationValuesComponent } from './sections/calculation-values/calculation-values.component';
 import { AttributeValuesComponent } from './sections/attribute-values/attribute-values.component';
 import { ColorComponent } from './sections/color/color.component';
+import { AnglesComponent } from './sections/angles/angles.component';
 
 
 
@@ -21,7 +22,8 @@ import { ColorComponent } from './sections/color/color.component';
     DistancesComponent,
     CalculationValuesComponent,
     AttributeValuesComponent,
-    ColorComponent
+    ColorComponent,
+    AnglesComponent
   ],
   imports: [
     CommonModule,

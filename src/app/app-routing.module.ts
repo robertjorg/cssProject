@@ -11,6 +11,7 @@ const routes: Routes = [
         { path: 'chapterTwo', loadChildren: './chapter-two/chapter-two.module#ChapterTwoModule'},
         { path: 'chapterThree', loadChildren: './chapter-three/chapter-three.module#ChapterThreeModule'},
         { path: 'chapterFour', loadChildren: './chapter-four/chapter-four.module#ChapterFourModule'},
+        { path: 'fonts', loadChildren: './chapter-five/chapter-five.module#ChapterFiveModule'},
       ]
 
   }

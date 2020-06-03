@@ -76,3 +76,11 @@ a {
 .yellow {
   color: yellow;
 }
+
+p.one {color: hsl(0,50%,0%);}
+p.two{color: hsl(60,50%,25%);}
+p.three {color: hsl(120,50%,50%);}
+p.four {color: hsl(180,50%,75%);}
+p.five {color: hsl(240,50%,0%);}
+p.six {color: hsl(300,50%,25%);}
+p.seven {color: hsl(360,50%,50%);}

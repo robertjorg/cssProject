@@ -1,3 +1,4 @@
+import { AnglesComponent } from './sections/angles/angles.component';
 import { ColorComponent } from './sections/color/color.component';
 import { AttributeValuesComponent } from './sections/attribute-values/attribute-values.component';
 import { CalculationValuesComponent } from './sections/calculation-values/calculation-values.component';
@@ -23,6 +24,7 @@ export const routes: Routes = [
       { path: 'calculation', component: CalculationValuesComponent },
       { path: 'attribute', component: AttributeValuesComponent },
       { path: 'color', component: ColorComponent },
+      { path: 'angles', component: AnglesComponent },
     ] }
   ]
   }

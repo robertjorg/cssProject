@@ -4,8 +4,8 @@ Here we have:<span #namedColors></span>
 <ul>
   <li><a (click)="scroll(namedColors)">Named Colors</a></li>
   <li><a (click)="scroll(rgb)">Colors by RGB and RGBa</a></li>
-  <li>colors by HSL and HSLa</li>
-  <li>Color Keywords</li>
+  <li><a (click)="scroll(hsl)">Colors by HSL and HSLa</a></li>
+  <li><a (click)="scroll(color)">Color Keywords</a></li>
 </ul></div>
 <h2>Named Colors</h2>
 <div>You are able to use the name of the colors you want to use. CSS calls this, <i>named colors</i>. Originally there were 16 colors:
@@ -29,10 +29,12 @@ Here we have:<span #namedColors></span>
 </ul>
 You could do things like h1 {{'{'}} color: silver;{{'}'}}<br/>
 There are other colors beyond the original 16 now, the list now has 148 keyword colors.</div>
+
 <h2>Colors by RGB and RGBa</h2>
 <div>You can create a color by combining different levels of red, green, and blue. This is called a RGB color. There are few limits on the colors that can be produced using this
   method. There are four ways to affect color in RGB.
 </div>
+
 <h3>Functional RGB Colors</h3>
 <div>You can use rgb(color) and color would use either a percentage (0-100%) or integer (0-255). Using the percent notation you could specify white and black:
   <ul>
@@ -46,6 +48,7 @@ There are other colors beyond the original 16 now, the list now has 148 keyword 
   </ul>
   Remember that you cannot mix integers and percentages in the same color value. YOu would change the rgb values to get different shades of colors.
 </div>
+
 <h3>RGBa colors</h3>
 <div>This is similar to RGB, except the a stands for alpha. This is a measure of opacity. You can do half transparent white and by:
   <ul>
@@ -55,4 +58,37 @@ There are other colors beyond the original 16 now, the list now has 148 keyword 
   Completely transparent would have a value of 0 in the alpha position. rgb(0,0,0) and rgb(0,0,0,1) would be the same black color. Alpha are real numbers ranging from 0 to 1.
   You cannot us a percent as the alpha value.
 </div>
-<h3>Hexadecimal RGB colors</h3>
+
+<h3 #hsl>Hexadecimal RGB colors</h3>
+<div>You can also use hexadecimal color notation to define a color. Such as color: #FF0000; which will set your color to red.<br/>
+Hexadecimal notation is created by stringing three hexadecimal numbers together, the numbers range from 00 to FF. The generic syntax is #RRGGBB.<br/>
+Hexadecimal notation is mathematically quivalent to the integer-pair notation discussed above. So, rgb(255,255,255) is the same as #FFFFFF.<br/>
+You are able to only us three numbers, #666. This would be interpreted on the browser as #666666. YOu cannot short hand the hexadecimal value if the numbers are not all the same.
+You cannot use shorthand for #808080. If you use #888 that would be translated to #888888.</div>
+
+<h3>Hexadecimal RGBa colors</h3>
+<div>This adds a fourth number which is the alpha channel value. For black you would write #000000FF. This would be black with 100% opacity. These can also be shortened to be
+  #000F.
+</div>
+
+<h2>Colors by HSL and HSLa</h2>
+<div #color>HSL stands for Hue, Saturation, and Lightness. Hue is for the hue angle in the range 0 - 360. Saturation is a percentage avlue from 0 (no stauration) to 100 (full saturation).
+  Lightness is a percantage value from 0 (complete dark) to 100 (complete light).<br/>
+  Hue angle is used to show the full spectrum of colors with 0 degrees being red and proceeds through the colors of the rainbow ending with red again at 360.<br/>
+  Saturation measures the intensity of the color along the hue angle. Gray will always be the color when saturation is 0. Lightness tells how light or dark the color along the
+  angle appears. A lightness of 0% will always be black, while 100% will always be white. Here are some examples:
+  <p class="one">p.one {{'{'}}color: hsl(0,50%,0%);{{'}'}}</p>
+  <p class="two">p.two{{'{'}}color: hsl(60,50%,25%);{{'}'}}</p>
+  <p class="three">p.three {{'{'}}color: hsl(120,50%,50%);{{'}'}}</p>
+  <p class="four">p.four {{'{'}}color: hsl(180,50%,75%);{{'}'}}</p>
+  <p class="five">p.five {{'{'}}color: hsl(240,50%,0%);{{'}'}}</p>
+  <p class="six">p.six {{'{'}}color: hsl(300,50%,25%);{{'}'}}</p>
+  <p class="seven">p.seven {{'{'}}color: hsl(360,50%,50%);{{'}'}}</p>
+  HSL also has an alpha value that can be added. The syntax is hsla(0,0%,0%,1);
+</div>
+
+<h2>Color Keywords</h2>
+<div>Two keywords can be used whereever colors are accepted. These are <i>transparent</i> and <i>currentColor</i>.<br/>
+Transparent defines a completely transparent color. This is defined as rgb(0,0,0,0). This is more used for element background colors.<br/>
+CurrentColor means the computed value of color for this element. For example: main {{'{'}} color: gray; border-color: currentColor; {{'}'}} this would give the border-color
+a color of gray or rgb(50%, 50%, 50%) because the is the color element.</div>
