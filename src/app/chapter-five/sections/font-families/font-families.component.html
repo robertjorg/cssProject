@@ -1,1 +1,22 @@
 <h1>Font Families</h1>
+<div>A font family is not just a single font, for example Times is a compination of TimesRegular, TimesBold, TimesItalic, TimesBoldItalic. This is the font family. Times is the font face.<br/>
+CSS defines five generic font families:
+<ol>
+  <li>Serif fonts - These fonts are proprotional and have serifs (the as the little lines at the top and bottom of a lowercase l. Examples are Times, Georgia, and New Century Schoolbook</li>
+  <li>Sans-serif fonts - Proprotional fonts that do not have the serifs. Examples are Helvetica, Geneca, Verdana, Arial, and Univers</li>
+  <li>Monospace fonts - These are not proportional fonts. Letters will take up the same space. Examples are Courier, Courier New, Consolas, and Andale Mono</li>
+  <li>Cursive fonts - an attempt to look like human handwriting or lettering. Examples are Zapf Chancery, Author, and Comic Sans</li>
+  <li>Fantasy fonts - Not really defined by a single characteristic other then the ability to easily put them in a bucket. Examples are Western, Woodblock, and Klingon</li>
+</ol>
+Theory says that all fonts should be able to be placed into one of these categories. If not, a browser may just drop the fonts it cannot classify.</div>
+<h2>Using Generic Font Families</h2>
+<div>You can call any available font family by using the property font-family. For example: body {{'{'}}font-family: sans-serif;{{'}'}} </div>
+<h2>Specifying a Font Family</h2>
+<div>h1 {{'{'}}font-family: Georgia;{{'}'}}<br/>
+You can add backup font families by doing this h1 {{'{'}}font-family: Georgia, serif;{{'}'}} If Georgia isn't installed it will default to a serif family font that is installed.<br/>
+You can string the fonts together to get a few different options if one isn't available.</div>
+<h3>Using quotation marks</h3>
+<div>You put the single quote mark around fonts that have spaces or symbols in the name. Quote marks are just recommendations. You only need quote marks around fonts that match font-family keyworks.
+Font-family keywords should not be quoted, ever. Otherwise the agent will think you want a font with that name, not the generic family.
+</div>
+<h2>Using @font-face</h2>
